@@ -304,7 +304,7 @@ function openEditTaskModal(task) {
 
 
   // Call saveTaskChanges upon click of Save Changes button
-  saveChangesBtn.addEventListener('click', () => {
+  saveChangesBtn.addEventListener ('click ',() => {
     saveTaskChanges(task.id);
   });
   
@@ -324,11 +324,17 @@ function openEditTaskModal(task) {
 
 function saveTaskChanges(taskId) {
   // Get new user inputs
+  const titleInput = document.getElementById('edit-task-title-input');
+  if (titleInput.value.trim() === '') {
+    alert('The title field cannot be empty!');
+    return;
+  }
   const updatedTask = {
-    title: editTaskTitleInput.value,
-    description: editTaskDescInput.value,
-    status: editSelectStatus.value,
-    board: activeBoard, // Ensure it stays in the same board
+    title: document.getElementById('edit-task-title-input').value,
+    description: document.getElementById('edit-task-desc-input').value,
+    status: document.getElementById('edit-select-status').value,
+    id: taskId,
+    board: activeBoard
   };
 
 
