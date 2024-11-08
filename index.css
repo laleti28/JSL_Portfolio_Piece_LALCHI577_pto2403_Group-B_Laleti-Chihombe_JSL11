@@ -27,7 +27,7 @@ body {
   min-height: 100vh;
   flex-direction: row;
   margin: 0;
-  /* border: 5px solid red; */
+   border: 5px solid red; 
   background-color: var(--secondary-color);
   box-sizing: border-box;
   width: 100%;
@@ -40,7 +40,7 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
-  /* border: 2px solid green; */
+  border: 2px solid green; 
   overflow-x: hidden
 }
 
@@ -125,7 +125,7 @@ body {
 
 .active .icon-board {
   filter: brightness(0) invert(1);
-  /* Change the color of the icon to white */
+  /*Change the color of the icon to white */
 }
 
 #headline-sidepanel {
@@ -216,7 +216,7 @@ header {
   align-items: center;
   background-color: var(--primary-color);
   height: 100px;
-  /* border: 5px solid rgb(29, 220, 237); */
+  border: 5px solid rgb(29, 220, 237); 
   padding-left: 30px;
   padding-right: 35px;
   border-bottom: 0.1px solid #979797;
@@ -247,7 +247,7 @@ header {
   display: flex;
   flex-direction: column;
   /* flex: 5; */
-  /* border: 5px solid rgb(170, 211, 58); */
+  border: 5px solid rgb(170, 211, 58); 
   /* padding-top: 130px; */
   padding-left: 35px;
   max-height: auto;

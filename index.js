@@ -296,7 +296,7 @@ function toggleTheme() {
 function openEditTaskModal(task) {
   // Set task details in modal inputs
   
-   document.getElementById('edit-task-title').value = task.title;
+   document.getElementById('edit-task-title').value === task.title;
    document.getElementById('edit-task-description').value = task.description
   // Get button elements from the task modal
   const saveChangesBtn = document.getElementById('save-changes-btn');
@@ -310,9 +310,12 @@ function openEditTaskModal(task) {
   
 
   // Delete task using a helper function and close the task modal
+function deleteTask(taskId) {
+  // Implementation of deleteTask function in ./utils/taskFunctions.js
+}
 
   deleteTaskBtn.addEventListener('click', () => {
-    deleteTask(task.id);
+    deleteTask((task.id));
     toggleModal(false, elements.editTaskModal);
     refreshTasksUI(); // Refresh tasks after deletion
   });
